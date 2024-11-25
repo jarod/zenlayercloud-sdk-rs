@@ -7,6 +7,8 @@ rust-version.workspace = true
 repository.workspace = true
 license-file.workspace = true
 categories.workspace = true
+description.workspace = true
+readme = "../README.md"
 
 [dependencies]
 # bon = "~3.0"
