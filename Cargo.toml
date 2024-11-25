@@ -1,0 +1,19 @@
+[workspace]
+resolver = "2"
+members = ["sdk", "services/*"]
+
+[workspace.package]
+version = "0.0.0"
+edition = "2021"
+rust-version = "1.73"
+authors = ["Jarod Liu <liuyuanzhi@gmail.com>"]
+repository = "https://github.com/jarod/zenlayercloud-sdk-rs"
+license-file = "LICENSE"
+categories = ["api-bindings"]
+
+[workspace.dependencies]
+serde = "~1.0"
+chrono = "~0.4"
+log = "~0.4"
+tokio = "~1.41"
+anyhow = "~1.0"

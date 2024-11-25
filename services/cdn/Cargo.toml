@@ -1,0 +1,21 @@
+[package]
+name = "zenlayercloud-sdk-cdn"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+license-file.workspace = true
+categories.workspace = true
+
+[dependencies]
+zenlayercloud-sdk = { path = "../../sdk" }
+serde = { workspace = true, features = ["derive"] }
+bon = "~3.0"
+chrono = { workspace = true, features = ["serde"] }
+log.workspace = true
+tokio = { workspace = true, features = ["macros"] }
+anyhow.workspace = true
+
+[dev-dependencies]
+env_logger = "~0.11"
