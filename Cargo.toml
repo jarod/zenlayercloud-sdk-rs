@@ -3,7 +3,7 @@ resolver = "2"
 members = ["sdk", "services/*"]
 
 [workspace.package]
-version = "0.0.0-alpha"
+version = "0.0.1-alpha"
 edition = "2021"
 rust-version = "1.73"
 authors = ["Jarod Liu <liuyuanzhi@gmail.com>"]
@@ -13,8 +13,11 @@ categories = ["api-bindings"]
 description = "Async Zenlayer Cloud openapi wrapper"
 
 [workspace.dependencies]
-serde = "~1.0"
-chrono = "~0.4"
-log = "~0.4"
-tokio = "~1.41"
-anyhow = "~1.0"
+serde = "1.0"
+chrono = "0.4"
+log = "0.4"
+tokio = "1"
+anyhow = "1.0"
+# services/*
+# zenlayercloud-sdk = { path = "sdk" }
+zenlayercloud-sdk = "0.0.1-alpha"

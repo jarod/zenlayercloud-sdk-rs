@@ -11,14 +11,11 @@ description.workspace = true
 readme = "../README.md"
 
 [dependencies]
-# bon = "~3.0"
-reqwest = { version = "~0.12", features = ["json"] }
+reqwest = { version = "0.12", features = ["json"] }
 serde = { workspace = true, features = ["derive"] }
-thiserror = "~2.0"
+thiserror = "2.0"
 anyhow.workspace = true
-# sha256 = "~1.5"
 chrono.workspace = true
-hmac = "~0.12"
-sha2 = "~0.10"
-# hex = "~0.4"
+hmac = "0.12"
+sha2 = "0.10"
 log.workspace = true

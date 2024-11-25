@@ -11,14 +11,13 @@ description.workspace = true
 readme = "../../README.md"
 
 [dependencies]
-# zenlayercloud-sdk = { path = "../../sdk" }
-zenlayercloud-sdk = "0.0.0-alpha"
+zenlayercloud-sdk.workspace = true
 serde = { workspace = true, features = ["derive"] }
-bon = "~3.0"
+bon = "3.0"
 chrono = { workspace = true, features = ["serde"] }
 log.workspace = true
 tokio = { workspace = true, features = ["macros"] }
 anyhow.workspace = true
 
 [dev-dependencies]
-env_logger = "~0.11"
+env_logger = "0.11"
