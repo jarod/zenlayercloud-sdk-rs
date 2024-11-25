@@ -1,5 +1,6 @@
 use anyhow::Context;
 use hmac::{Hmac, Mac};
+use log::debug;
 use sha2::{Digest, Sha256};
 use crate::Error;
 
@@ -48,6 +49,7 @@ impl Signer for Zc2HS256Signer {
             .as_bytes()
             .context("failed to read payload")?;
         let hashed_request_payload = hex_sha256(body_bytes);
+        debug!("payload={}", String::from_utf8_lossy(body_bytes));
 
         let canonical_request = format!(
             "{}\n{}\n{}\n{}\n{}\n{}",

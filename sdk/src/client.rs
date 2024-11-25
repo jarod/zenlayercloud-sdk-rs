@@ -75,6 +75,7 @@ impl Client {
     {
         let mut http_req = req.build()?;
         self.signer.sign_request(&mut http_req)?;
+        debug!("http_req={:?}", http_req);
         let http_res = self.hc.execute(http_req).await?;
         debug!("http_res={:?}", http_res);
         let status = http_res.status();

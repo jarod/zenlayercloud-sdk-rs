@@ -51,7 +51,6 @@ pub struct CreateCertificateRequest {
     pub certificate_key: String,
     #[serde(rename = "certificateLabel")]
     pub certificate_label: Option<String>,
-    pub san: Option<String>,
     #[serde(rename = "resourceGroupId")]
     pub resource_group_id: Option<String>,
 }

@@ -3,7 +3,7 @@ resolver = "2"
 members = ["sdk", "services/*"]
 
 [workspace.package]
-version = "0.0.1-alpha"
+version = "0.0.2-alpha"
 edition = "2021"
 rust-version = "1.73"
 authors = ["Jarod Liu <liuyuanzhi@gmail.com>"]
@@ -20,4 +20,4 @@ tokio = "1"
 anyhow = "1.0"
 # services/*
 # zenlayercloud-sdk = { path = "sdk" }
-zenlayercloud-sdk = "0.0.1-alpha"
+zenlayercloud-sdk = "0.0.2-alpha"
